@@ -9,6 +9,6 @@ Route::get('/', function () {
 
 Route::get('/index',[KunjunganController::class, 'index']);
 Route::get('/kunjungan',[KunjunganController::class, 'index']);
-Route::get('/kunjungan/tambah',[KunjunganController::class, 'index']);
-Route::post('/index',[KunjunganController::class, 'index']);
-Route::get('/index',[KunjunganController::class, 'index']);
+Route::get('/kunjungan/tambah',[KunjunganController::class, 'tambah']);
+Route::post('/kunjungan/simpan',[KunjunganController::class, 'simpan']);
+Route::get('/kunjungan/hapus/{id}',[KunjunganController::class, 'hapus']);
