@@ -7,6 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/index',[KunjunganController::class, 'index']);
-// Route::post('/index',[KunjunganController::class, 'index']);
-// Route::get('/index',[KunjunganController::class, 'index']);
+Route::get('/index',[KunjunganController::class, 'index']);
+Route::get('/kunjungan',[KunjunganController::class, 'index']);
+Route::get('/kunjungan/tambah',[KunjunganController::class, 'index']);
+Route::post('/index',[KunjunganController::class, 'index']);
+Route::get('/index',[KunjunganController::class, 'index']);
